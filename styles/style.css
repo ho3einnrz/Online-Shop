@@ -1,0 +1,336 @@
+/* GENERAL STYLES */
+
+@import url("reset.css");
+
+@font-face {
+    font-family: 'vazir';
+    src: url(../fonts/vaizr.eot)format(eot);
+    src: url(../fonts/vazir.ttf)format(truetype),
+        url(../fonts/vazir.woff2) format(woff2),
+        url(../fonts/vazir.woff) format(woff);
+}
+
+@font-face {
+    font-family: 'vazirBold';
+    src: url(../fonts/vaizr-bold.eot)format(eot);
+    src: url(../fonts/vazir-bold.ttf)format(truetype),
+        url(../fonts/vazir-bold.woff2) format(woff2),
+        url(../fonts/vazir-bold.woff) format(woff);
+}
+
+body,
+button {
+    font-family: 'vazir';
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/* HEADER SECTION STYLES*/
+
+#header {
+    background-color: rgba(253, 214, 102, 1);
+    height: 602px;
+}
+
+
+#header .container .intro {
+    left: 0;
+    direction: rtl;
+    position: relative;
+    top: 250px;
+    left: -70px;
+}
+
+#header .container .intro h1 {
+    font-family: 'vazirBold';
+    font-size: 25px;
+    margin: 0px 0px 10px 0px;
+    line-height: 30px;
+}
+
+#header .container .intro span {
+    width: 55%;
+    display: inline-block;
+    color: #3b3b3b;
+    padding: 15px 0 15px 15px;
+    line-height: 23px;
+}
+
+#header .container .intro button {
+    font-family: 'vazirBold';
+    background-color: darkorange;
+    width: 150px;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    position: relative;
+    top: 60px;
+    left: 745px;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+#header .container .headerImg img {
+    width: 400px;
+    position: relative;
+    top: -25px;
+    left: 60px;
+}
+
+/* MAIN SECTION STYLES */
+
+#main .container {
+    margin: 25px 0 35px 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#main .product-item {
+    width: 20%;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    color: #000;
+    direction: rtl;
+    padding: 15px;
+    margin: 10px;
+}
+
+#main section .product-image {
+    text-align: center;
+}
+
+#main section .product-image img {
+    width: 50%;
+    height: 50%;
+}
+
+#main section .product-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#main section .product-instock {
+    margin-top: 50px;
+    color: red;
+}
+
+#main section .product-data {
+    position: relative;
+}
+
+#main section .right {
+    position: relative;
+    left: 0;
+    bottom: 0;
+}
+
+#main section .left {
+    float: left;
+    position: relative;
+    right: 0;
+    bottom: 19px;
+}
+
+#main section .add-to-cart img {
+    width: 18px;
+    height: 18px;
+}
+
+/* FOOTER SECTION STYLES */
+
+#footer {
+    background-color: #3b3b3b;
+    height: 100px;
+}
+
+#footer .container {
+    text-align: center;
+    padding: 25px 0 2px 0;
+}
+
+#footer .container a,
+span {
+    color: #fff;
+}
+
+/* SIDEBAR SECTION STYLES */
+
+#sidebar .close {
+    position: sticky;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100px;
+    height: 100px;
+    background: #f97d02;
+    color: white;
+    border-radius: 0 50% 50% 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 9999;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#sidebar .open {
+    position: sticky;
+    position: fixed;
+    bottom: 0px;
+    left: 458px;
+    width: 100px;
+    height: 100px;
+    background: #f97d02;
+    color: white;
+    border-radius: 0 50% 50% 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 9999;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#sidebar .closeCartContent {
+    position: sticky;
+    position: fixed;
+    bottom: 0px;
+    left: -500px;
+    width: 500px;
+    height: 500px;
+    color: #000;
+    display: flex;
+    cursor: pointer;
+    z-index: 9999;
+    transition: transform 0.1s ease, box-shadow 0.4s ease;
+}
+
+#sidebar .openCartContent {
+    -webkit-box-shadow: 0px 0px 29px 1px #000;
+    box-shadow: 0px 0px 29px 1px #000;
+    background-color: #dadadaf0;
+    border: 2px solid #f97d02;
+    position: sticky;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 455px;
+    height: 500px;
+    color: #000;
+    display: flex;
+    cursor: pointer;
+    z-index: 9999;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 0 20px 0 0;
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#sidebar #cart-items {
+    flex: 1;
+    width: 100%;
+    overflow-y: hidden;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+#sidebar .cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 3px;
+    border-bottom: 1px solid #aeaeaee0;
+    font-size: 14px;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    /* gap: 20px; */
+}
+
+#sidebar .p-name {
+    flex: 1;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#sidebar .p-price {
+    width: 250px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+#sidebar .p-unit {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-shrink: 0;
+}
+
+#sidebar .unit {
+    min-width: 20px;
+    text-align: center;
+    color: #555;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+#sidebar .fa-plus {
+    background-color: rgb(0, 134, 89);
+    color: white;
+    padding: 4px;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+}
+
+#sidebar .fa-minus {
+    background-color: rgb(255, 78, 78);
+    color: white;
+    padding: 4px;
+    border-radius: 3px 0 0 3px;
+    cursor: pointer;
+}
+
+#sidebar .final-hide {
+    position: sticky;
+    position: fixed;
+    bottom: 0px;
+    left: -500px;
+    width: 500px;
+    height: 500px;
+    color: #000;
+    z-index: 9999;
+    transition: transform 0.1s ease, box-shadow 0.4s ease;
+}
+
+
+#sidebar .final-show{
+    -webkit-backdrop: 0px 0px 29px 1px #000;
+    box-shadow: 0px 0px 10px 1px #000;
+    background-color: #6d6d6d72; 
+    position: sticky;
+    position: fixed;
+    bottom: 15px;
+    left: 20px;
+    width: 400px;
+    height: 20px;
+    color: #000;
+    display: inline-flex;
+    justify-content: space-evenly;
+    z-index: 9999;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius:  50px;
+    padding: 10px;
+}
