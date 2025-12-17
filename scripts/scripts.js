@@ -79,8 +79,8 @@ function renderCartItem() {
                         </div>
 
                     </li>`
-        renderTotal();
     }
+    renderTotal();
 }
 
 //change number of units
@@ -113,11 +113,11 @@ function renderTotal() {
     let totalItems = 0;
 
     for (let i = 0; i < cart.length; i++) {
-        totalItems += cart[i].numberOfUnits;
-        totalPrice += cart[i].price * cart[i].numberOfUnits; 
+        // totalItems += cart[i].numberOfUnits;
+        totalPrice += cart[i].price * cart[i].numberOfUnits;
     }
 
-    totalItemsEl.innerHTML = totalItems;
+    // totalItemsEl.innerHTML = totalItems;
     totalPriceEl.innerHTML = commafy(totalPrice);
 }
 
